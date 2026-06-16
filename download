@@ -1,0 +1,40 @@
+# Secrets — never commit credentials
+secrets.json
+# settings.json is intentionally tracked and deployed.
+# It is the source of truth for all bot configuration on Railway.
+# DO NOT add settings.json to .gitignore — Railway reads it from /app/settings.json.
+# Use settings.json.example as a reference template only.
+
+
+# Runtime data files
+trade_history.json
+trade_history_archive.json
+score_cache.json
+signal_cache.json
+ops_state.json
+runtime_state.json
+calendar_cache.json
+cable_scalp.db
+cable_scalp.db-shm
+cable_scalp.db-wal
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs
+*.log
+logs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor artefacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
